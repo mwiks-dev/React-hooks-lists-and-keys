@@ -9,7 +9,7 @@ function ColorList() {
     "hotpink",
   ];
   const colorElements = colors.map((color) => {
-    return <li style={{ color: color }}>{color}</li>;
+    return <li key={color} style={{ color: color }}>{color}</li>
 
   });
   return (
